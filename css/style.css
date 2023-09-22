@@ -1,0 +1,123 @@
+/*Default Equalizing*/
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+body a {
+  color: inherit;
+  text-decoration: none;
+}
+body a:hover {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+body a:focus {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+body button {
+  border: none;
+  color: inherit;
+  outline: none;
+  background: none;
+}
+body button:hover {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+body button:focus {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+body input {
+  border: none;
+  color: inherit;
+  outline: none;
+  background: none;
+}
+body input:hover {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+body input:focus {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+/*Utils*/
+.container {
+  max-width: 1200px;
+  padding: 8px 16px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/*Text Props*/
+/*Text Weight Props*/
+.textBold {
+  font-weight: 700;
+}
+
+/*Text Color Props*/
+.textDark {
+  color: #0e0e0e;
+}
+
+.textLight {
+  color: #fafafa;
+}
+
+/*Text Size Props*/
+.textXs {
+  font-size: 10px;
+}
+
+.textSm {
+  font-size: 14px;
+}
+
+.textReg {
+  font-size: 16px;
+}
+
+.textMd {
+  font-size: 18px;
+}
+
+.textLg {
+  font-size: 20px;
+}
+
+.textXl {
+  font-size: 25px;
+}
+
+.textXXL {
+  font-size: 30px;
+}
+
+/*Sectional*/
+header.header {
+  padding: 10px 15px;
+  background: #eeeeee;
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: row;
+}/*# sourceMappingURL=style.css.map */
