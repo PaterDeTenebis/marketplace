@@ -1,13 +1,27 @@
-/*Default Equalizing*/
+/*Variables*/
 
+@import 'variables';
+
+/*Default Equalizing*/
+*::-moz-selection {
+  background-color: $defContr;
+  color: $defLight;
+}
+*::selection {
+  background-color: $defContr;
+  color: $defLight;
+}
 body {
   margin: 0;
   padding: 0;
   background: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 18px !important;
+  color: $defDark !important;
   a {
     color: inherit;
     text-decoration: none;
+    font-size: $fzDef;
     &:hover {
       color: inherit;
       text-decoration: none;
@@ -20,11 +34,13 @@ body {
       border: none;
     }
   }
+
   button {
     border: none;
-    color: inherit;
+    color: $defDark;
     outline: none;
     background: none;
+    font-size: $fzDef;
     &:hover {
       color: inherit;
       text-decoration: none;
@@ -43,7 +59,9 @@ body {
     border: none;
     color: inherit;
     outline: none;
-    background: none;
+    background: #fff;
+    border-radius: 10px;
+    font-size: $fzDef;
     &:hover {
       color: inherit;
       text-decoration: none;
@@ -70,10 +88,29 @@ body {
 
 /*Sectional*/
 header.header {
-  padding: 10px 15px;
+  padding: 10px 15px 0px 15px;
   background: #eeeeee;
 }
 .headerContent {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.hSearch {
+  margin: 0px 10px;
+  input {
+    padding: 5px;
+    transition: 0.2s;
+  }
+}
+.logo {
+  margin-right: 15px;
+}
+.headerCategories {
+  padding: 30px 0px 5px 0px;
+  .btn:first-child {
+    margin-left: 0;
+  }
 }

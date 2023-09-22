@@ -1,13 +1,27 @@
+/*Variables*/
 /*Default Equalizing*/
+*::-moz-selection {
+  background-color: #7DC0E2;
+  color: #fafafa;
+}
+
+*::selection {
+  background-color: #7DC0E2;
+  color: #fafafa;
+}
+
 body {
   margin: 0;
   padding: 0;
   background: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 18px !important;
+  color: #414141 !important;
 }
 body a {
   color: inherit;
   text-decoration: none;
+  font-size: 18px;
 }
 body a:hover {
   color: inherit;
@@ -22,9 +36,10 @@ body a:focus {
 }
 body button {
   border: none;
-  color: inherit;
+  color: #414141;
   outline: none;
   background: none;
+  font-size: 18px;
 }
 body button:hover {
   color: inherit;
@@ -43,7 +58,9 @@ body input {
   border: none;
   color: inherit;
   outline: none;
-  background: none;
+  background: #fff;
+  border-radius: 10px;
+  font-size: 18px;
 }
 body input:hover {
   color: inherit;
@@ -67,19 +84,197 @@ body input:focus {
   box-sizing: border-box;
 }
 
+.df {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dfBtw {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.aiTop {
+  align-items: top;
+}
+
+.aiCenter {
+  align-items: center;
+}
+
+.dfCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flw {
+  flex-wrap: wrap;
+}
+
+.btn {
+  background: none;
+  border: none;
+  border-radius: 9px;
+  margin: 0px 5px;
+  transition: 0.2s;
+}
+.btn:hover {
+  color: #7DC0E2;
+}
+.btn:focus {
+  color: #7DC0E2;
+}
+
+.active {
+  color: #7DC0E2;
+}
+
+.btnOutline {
+  border: 1px solid #7DC0E2;
+  border-radius: 9px;
+  padding: 5px;
+}
+.btnOutline:hover {
+  border: 1px solid #7DC0E2;
+  color: #7DC0E2;
+}
+.btnOutline:focus {
+  border: 1px solid #7DC0E2;
+  color: #7DC0E2;
+}
+
+.btnUnderline {
+  border-radius: 0;
+  border-bottom: 1px solid #7DC0E2;
+  padding: 5px;
+}
+.btnUnderline:hover {
+  border-bottom: 1px solid #7DC0E2;
+}
+
+.childDivided {
+  border-radius: 0px;
+  margin-right: 0;
+  margin-left: 0;
+}
+.childDivided:not(:last-child) {
+  border-right: 1px solid #414141;
+}
+
+section.section {
+  padding: 15px 0;
+}
+
+.sectionHeader {
+  margin: 10px 0;
+}
+
+.card {
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+.card .cardImg {
+  width: 100%;
+  border-radius: 9px;
+  position: relative;
+  overflow: hidden;
+}
+.card .cardImg .topInfo {
+  position: absolute;
+  padding: 5px;
+  top: 10px;
+  left: 10px;
+}
+.card .cardImg .brandName {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+.card .cardImg .brandName span {
+  text-shadow: 0px 0px 5px 2px #414141;
+}
+.card .cardImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 9px;
+  max-height: 300px;
+}
+.card .cardImg:hover {
+  transition: 0.2s;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px 0px #414141;
+}
+.card .cardTxt {
+  padding: 0 5px;
+}
+.card .cardTxt .cardTxtItem {
+  margin: 10px 0;
+}
+.card .cardTxt .cardTxtItem a:hover {
+  text-decoration: underline;
+}
+
+.cardLight {
+  border-radius: 9px;
+  background: #fff;
+}
+
+.w25 {
+  width: 15%;
+}
+
 /*Text Props*/
+/*Text Font Family Props*/
+.textFFMain {
+  font-family: "Montserrat", sans-serif;
+}
+
+.textFFSec {
+  font-family: "Roboto", sans-serif;
+}
+
 /*Text Weight Props*/
-.textBold {
+.text300 {
+  font-weight: 300;
+}
+
+.text400 {
+  font-weight: 400;
+}
+
+.text500 {
+  font-weight: 500;
+}
+
+.text700 {
   font-weight: 700;
+}
+
+.text900 {
+  font-weight: 900;
 }
 
 /*Text Color Props*/
 .textDark {
-  color: #0e0e0e;
+  color: #414141;
 }
 
 .textLight {
   color: #fafafa;
+}
+
+.textContr {
+  color: #7DC0E2;
+}
+
+.tdu {
+  text-decoration: underline;
 }
 
 /*Text Size Props*/
@@ -111,13 +306,39 @@ body input:focus {
   font-size: 30px;
 }
 
+.ttu {
+  text-transform: uppercase;
+}
+
 /*Sectional*/
 header.header {
-  padding: 10px 15px;
+  padding: 10px 15px 0px 15px;
   background: #eeeeee;
 }
 
 .headerContent {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.hSearch {
+  margin: 0px 10px;
+}
+.hSearch input {
+  padding: 5px;
+  transition: 0.2s;
+}
+
+.logo {
+  margin-right: 15px;
+}
+
+.headerCategories {
+  padding: 30px 0px 5px 0px;
+}
+.headerCategories .btn:first-child {
+  margin-left: 0;
 }/*# sourceMappingURL=style.css.map */
