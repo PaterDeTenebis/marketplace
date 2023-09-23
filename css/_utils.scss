@@ -8,12 +8,15 @@
 .df {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  
 }
 .dfBtw {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.mla {
+  margin-left: auto;
 }
 .aiTop {
   align-items: top;
@@ -79,7 +82,7 @@ section.section {
   padding: 15px 0;
 }
 .sectionHeader {
-  margin: 10px 0;
+  margin: 15px 0;
 }
 .card {
   border-radius: 9px;
@@ -114,7 +117,7 @@ section.section {
     &:hover {
       transition: 0.2s;
       transform: scale(1.1);
-      box-shadow: 0px 0px 20px 0px $defDark;
+      box-shadow: 0px 0px 20px 0px #bcbbbb;
     }
   }
   .cardTxt {
@@ -135,4 +138,26 @@ section.section {
 }
 .w25 {
   width: 15%;
+}
+ul.list {
+  li.listItem {
+    list-style-type: none;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 100%;
+      background: $defContr;
+      top: 7px;
+      left: -10px;
+    }
+  }
+}
+.textHolder {
+  margin: 10px 0;
+}
+.lineDivided {
+  margin: 10px 0;
 }

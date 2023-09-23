@@ -1,12 +1,12 @@
 /*Variables*/
 /*Default Equalizing*/
 *::-moz-selection {
-  background-color: #7DC0E2;
+  background-color: #49D6CE;
   color: #fafafa;
 }
 
 *::selection {
-  background-color: #7DC0E2;
+  background-color: #49D6CE;
   color: #fafafa;
 }
 
@@ -87,13 +87,16 @@ body input:focus {
 .df {
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
 .dfBtw {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.mla {
+  margin-left: auto;
 }
 
 .aiTop {
@@ -123,37 +126,37 @@ body input:focus {
   transition: 0.2s;
 }
 .btn:hover {
-  color: #7DC0E2;
+  color: #49D6CE;
 }
 .btn:focus {
-  color: #7DC0E2;
+  color: #49D6CE;
 }
 
 .active {
-  color: #7DC0E2;
+  color: #49D6CE;
 }
 
 .btnOutline {
-  border: 1px solid #7DC0E2;
+  border: 1px solid #49D6CE;
   border-radius: 9px;
   padding: 5px;
 }
 .btnOutline:hover {
-  border: 1px solid #7DC0E2;
-  color: #7DC0E2;
+  border: 1px solid #49D6CE;
+  color: #49D6CE;
 }
 .btnOutline:focus {
-  border: 1px solid #7DC0E2;
-  color: #7DC0E2;
+  border: 1px solid #49D6CE;
+  color: #49D6CE;
 }
 
 .btnUnderline {
   border-radius: 0;
-  border-bottom: 1px solid #7DC0E2;
+  border-bottom: 1px solid #49D6CE;
   padding: 5px;
 }
 .btnUnderline:hover {
-  border-bottom: 1px solid #7DC0E2;
+  border-bottom: 1px solid #49D6CE;
 }
 
 .childDivided {
@@ -170,7 +173,7 @@ section.section {
 }
 
 .sectionHeader {
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .card {
@@ -208,7 +211,7 @@ section.section {
 .card .cardImg:hover {
   transition: 0.2s;
   transform: scale(1.1);
-  box-shadow: 0px 0px 20px 0px #414141;
+  box-shadow: 0px 0px 20px 0px #bcbbbb;
 }
 .card .cardTxt {
   padding: 0 5px;
@@ -227,6 +230,29 @@ section.section {
 
 .w25 {
   width: 15%;
+}
+
+ul.list li.listItem {
+  list-style-type: none;
+  position: relative;
+}
+ul.list li.listItem::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background: #49D6CE;
+  top: 7px;
+  left: -10px;
+}
+
+.textHolder {
+  margin: 10px 0;
+}
+
+.lineDivided {
+  margin: 10px 0;
 }
 
 /*Text Props*/
@@ -270,7 +296,7 @@ section.section {
 }
 
 .textContr {
-  color: #7DC0E2;
+  color: #49D6CE;
 }
 
 .tdu {
@@ -313,7 +339,7 @@ section.section {
 /*Sectional*/
 header.header {
   padding: 10px 15px 0px 15px;
-  background: #eeeeee;
+  background: #f2f2f2;
 }
 
 .headerContent {
@@ -341,4 +367,9 @@ header.header {
 }
 .headerCategories .btn:first-child {
   margin-left: 0;
+}
+
+footer.footer {
+  padding: 20px 0;
+  background: #f2f2f2;
 }/*# sourceMappingURL=style.css.map */

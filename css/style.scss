@@ -89,7 +89,7 @@ body {
 /*Sectional*/
 header.header {
   padding: 10px 15px 0px 15px;
-  background: #eeeeee;
+  background: $defSec;
 }
 .headerContent {
   display: flex;
@@ -113,4 +113,8 @@ header.header {
   .btn:first-child {
     margin-left: 0;
   }
+}
+footer.footer {
+  padding: 20px 0;
+  background: $defSec;
 }
