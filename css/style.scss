@@ -123,3 +123,53 @@ footer.footer {
     }
   }
 }
+.gallery {
+  width: 49%;
+  .card {
+    width: 100%;
+  }
+  .galleryThumbs {
+    display: flex;
+    flex-direction: column;
+    .galleryThumbsItem {
+      width: 40px;
+      height: 55px;
+      margin-right: 10px;
+      margin-top: 15px;
+      a {
+        width: 100%;
+        img {
+          width: 100%;
+          border-radius: $defBrad;
+        }
+      }
+    }
+  }
+}
+.prodDescr {
+  padding-top: 15px;
+}
+.buyHolder {
+  margin-top: 35px;
+  .btnBuy {
+    width: 49%;
+    height: 50px;
+  }
+}
+.productsHolder {
+  .card {
+    margin-right: 15px;
+  }
+}
+.productSingleMain {
+  .gallery {
+    .card {
+      .cardImg {
+        &:hover {
+          transform: none !important;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

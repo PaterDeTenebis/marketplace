@@ -84,9 +84,15 @@ body input:focus {
   box-sizing: border-box;
 }
 
+/* Flex Props */
 .df {
   display: flex;
   flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
 }
 
 .dfBtw {
@@ -118,6 +124,32 @@ body input:focus {
   flex-wrap: wrap;
 }
 
+/* Width Props */
+.w100 {
+  width: 100%;
+}
+
+.w60 {
+  width: 60%;
+}
+
+.w50 {
+  width: 48%;
+}
+
+.w40 {
+  width: 38%;
+}
+
+.w25 {
+  width: 45%;
+}
+
+.w15 {
+  width: 15%;
+}
+
+/* Button Props */
 .btn {
   background: none;
   border: none;
@@ -150,6 +182,20 @@ body input:focus {
   color: #49D6CE;
 }
 
+.btnOutlineDark {
+  border: 1px solid #414141;
+  border-radius: #414141;
+  padding: 5px;
+}
+.btnOutlineDark:hover {
+  border: 1px solid #49D6CE;
+  color: #49D6CE;
+}
+.btnOutlineDark:focus {
+  border: 1px solid #49D6CE;
+  color: #49D6CE;
+}
+
 .btnUnderline {
   border-radius: 0;
   border-bottom: 1px solid #49D6CE;
@@ -168,6 +214,15 @@ body input:focus {
   border-right: 1px solid #414141;
 }
 
+.btnSolid {
+  background: #49D6CE;
+}
+.btnSolid:hover {
+  color: #fafafa;
+  opacity: 0.8;
+}
+
+/* Section Props */
 section.section {
   padding: 15px 0;
 }
@@ -176,6 +231,7 @@ section.section {
   margin: 15px 0;
 }
 
+/* Card Props */
 .card {
   border-radius: 9px;
   display: flex;
@@ -222,16 +278,24 @@ section.section {
 .card .cardTxt .cardTxtItem a:hover {
   text-decoration: underline;
 }
+.card .cardTxt .prodDescr {
+  max-height: 41px;
+  overflow: scroll;
+  padding-top: 0;
+  box-shadow: inset 0px -5px 5px 15px #fff;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.card .cardTxt .prodDescr::-webkit-scrollbar {
+  display: none;
+}
 
 .cardLight {
   border-radius: 9px;
   background: #fff;
 }
 
-.w25 {
-  width: 15%;
-}
-
+/* List Props */
 ul.list li.listItem {
   list-style-type: none;
   position: relative;
@@ -247,12 +311,30 @@ ul.list li.listItem::before {
   left: -10px;
 }
 
+/* Dividers Props */
 .textHolder {
   margin: 10px 0;
 }
 
 .lineDivided {
   margin: 10px 0;
+}
+
+input.prodQuestionInput {
+  border: 1px solid #49D6CE;
+  background: #f2f2f2;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  padding: 5px;
+  font-size: 14px;
+  color: #414141;
+}
+input.prodQuestionInput:hover {
+  border: 1px solid #49D6CE;
+}
+input.prodQuestionInput:focus {
+  border: 1px solid #49D6CE;
 }
 
 /*Text Props*/
@@ -297,6 +379,14 @@ ul.list li.listItem::before {
 
 .textContr {
   color: #49D6CE;
+}
+
+.textError {
+  color: crimson;
+}
+
+.textMuted {
+  color: #a3a3a3;
 }
 
 .tdu {
@@ -375,4 +465,49 @@ footer.footer {
 }
 footer.footer .footerMain .logo {
   margin-right: 20px;
+}
+
+.gallery {
+  width: 49%;
+}
+.gallery .card {
+  width: 100%;
+}
+.gallery .galleryThumbs {
+  display: flex;
+  flex-direction: column;
+}
+.gallery .galleryThumbs .galleryThumbsItem {
+  width: 40px;
+  height: 55px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+.gallery .galleryThumbs .galleryThumbsItem a {
+  width: 100%;
+}
+.gallery .galleryThumbs .galleryThumbsItem a img {
+  width: 100%;
+  border-radius: 9px;
+}
+
+.prodDescr {
+  padding-top: 15px;
+}
+
+.buyHolder {
+  margin-top: 35px;
+}
+.buyHolder .btnBuy {
+  width: 49%;
+  height: 50px;
+}
+
+.productsHolder .card {
+  margin-right: 15px;
+}
+
+.productSingleMain .gallery .card .cardImg:hover {
+  transform: none !important;
+  box-shadow: none;
 }/*# sourceMappingURL=style.css.map */

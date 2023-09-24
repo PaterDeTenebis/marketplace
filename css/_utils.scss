@@ -5,10 +5,14 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+/* Flex Props */
 .df {
   display: flex;
   flex-direction: row;
-  
+}
+.col {
+  display: flex;
+  flex-direction: column;
 }
 .dfBtw {
   display: flex;
@@ -33,10 +37,34 @@
 .flw {
   flex-wrap: wrap;
 }
+
+/* Width Props */
+
+.w100 {
+  width: 100%;
+}
+.w60 {
+  width: 60%;
+}
+.w50 {
+  width: 48%;
+}
+.w40 {
+  width: 38%;
+}
+.w25 {
+  width: 45%;
+}
+.w15 {
+  width: 15%;
+}
+
+/* Button Props */
+
 .btn {
   background: none;
   border: none;
-  border-radius: 9px;
+  border-radius: $defBrad;
   margin: 0px 5px;
   transition: 0.2s;
   &:hover {
@@ -51,7 +79,20 @@
 }
 .btnOutline {
   border: 1px solid $defContr;
-  border-radius: 9px;
+  border-radius: $defBrad;
+  padding: 5px;
+  &:hover {
+    border: 1px solid $defContr;
+    color: $defContr;
+  }
+  &:focus {
+    border: 1px solid $defContr;
+    color: $defContr;
+  }
+}
+.btnOutlineDark {
+  border: 1px solid $defDark;
+  border-radius: $defDark;
   padding: 5px;
   &:hover {
     border: 1px solid $defContr;
@@ -78,20 +119,32 @@
     border-right: 1px solid $defDark;
   }
 }
+.btnSolid {
+  background: $defContr;
+  &:hover {
+    color: $defLight;
+    opacity: 0.8;
+  }
+}
+/* Section Props */
+
 section.section {
   padding: 15px 0;
 }
 .sectionHeader {
   margin: 15px 0;
 }
+
+/* Card Props */
+
 .card {
-  border-radius: 9px;
+  border-radius: $defBrad;
   display: flex;
   flex-direction: column;
   margin: 15px 0;
   .cardImg {
     width: 100%;
-    border-radius: 9px;
+    border-radius: $defBrad;
     position: relative;
     overflow: hidden;
     .topInfo {
@@ -111,7 +164,7 @@ section.section {
     img {
       width: 100%;
       height: 100%;
-      border-radius: 9px;
+      border-radius: $defBrad;
       max-height: 300px;
     }
     &:hover {
@@ -130,15 +183,26 @@ section.section {
         }
       }
     }
+    .prodDescr {
+      max-height: 41px;
+      overflow: scroll;
+      padding-top: 0;
+      box-shadow: inset 0px -5px 5px 15px #fff;
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
   }
 }
 .cardLight {
-  border-radius: 9px;
+  border-radius: $defBrad;
   background: #fff;
 }
-.w25 {
-  width: 15%;
-}
+
+/* List Props */
+
 ul.list {
   li.listItem {
     list-style-type: none;
@@ -155,9 +219,29 @@ ul.list {
     }
   }
 }
+
+/* Dividers Props */
+
 .textHolder {
   margin: 10px 0;
 }
 .lineDivided {
   margin: 10px 0;
+}
+
+input.prodQuestionInput {
+  border: 1px solid $defContr;
+  background: $defSec;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  padding: 5px;
+  font-size: 14px;
+  color: $defDark;
+  &:hover {
+    border: 1px solid $defContr;
+  }
+  &:focus {
+    border: 1px solid $defContr;
+  }
 }
