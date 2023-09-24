@@ -117,4 +117,9 @@ header.header {
 footer.footer {
   padding: 20px 0;
   background: $defSec;
+  .footerMain {
+    .logo {
+      margin-right: 20px;
+    }
+  }
 }

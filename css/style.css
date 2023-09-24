@@ -372,4 +372,7 @@ header.header {
 footer.footer {
   padding: 20px 0;
   background: #f2f2f2;
+}
+footer.footer .footerMain .logo {
+  margin-right: 20px;
 }/*# sourceMappingURL=style.css.map */
