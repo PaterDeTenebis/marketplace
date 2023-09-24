@@ -510,4 +510,10 @@ footer.footer .footerMain .logo {
 .productSingleMain .gallery .card .cardImg:hover {
   transform: none !important;
   box-shadow: none;
+}
+
+button.questionSend {
+  height: 40px;
+  width: 150px;
+  margin-left: 0;
 }/*# sourceMappingURL=style.css.map */
