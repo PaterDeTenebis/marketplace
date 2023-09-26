@@ -43,6 +43,9 @@
 .w100 {
   width: 100%;
 }
+.w70 {
+  width: 70%;
+}
 .w60 {
   width: 60%;
 }
@@ -53,7 +56,7 @@
   width: 38%;
 }
 .w25 {
-  width: 45%;
+  width: 25%;
 }
 .w15 {
   width: 15%;
@@ -118,6 +121,9 @@
   &:not(:last-child) {
     border-right: 1px solid $defDark;
   }
+}
+.childDivided:nth-child(2) {
+  padding-left: 0;
 }
 .btnSolid {
   background: $defContr;
@@ -229,19 +235,18 @@ ul.list {
   margin: 10px 0;
 }
 
-input.prodQuestionInput {
-  border: 1px solid $defContr;
-  background: $defSec;
-  width: 100%;
-  height: 50px;
-  margin-bottom: 15px;
-  padding: 5px;
+/* Input Props */
+
+.customInput {
+  transition: 0.2s;
   font-size: 14px;
-  color: $defDark;
+  height: 30px;
   &:hover {
-    border: 1px solid $defContr;
+    box-shadow: 0px 0px 10px 0px $defContr;
+    font-size: 18px;
   }
   &:focus {
-    border: 1px solid $defContr;
+    box-shadow: 0px 0px 10px 0px $defContr;
+    font-size: 18px;
   }
 }

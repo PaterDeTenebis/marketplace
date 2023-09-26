@@ -34,6 +34,10 @@ body a:focus {
   outline: none;
   border: none;
 }
+body h1 {
+  margin: 0;
+  padding: 0;
+}
 body button {
   border: none;
   color: #414141;
@@ -129,6 +133,10 @@ body input:focus {
   width: 100%;
 }
 
+.w70 {
+  width: 70%;
+}
+
 .w60 {
   width: 60%;
 }
@@ -142,7 +150,7 @@ body input:focus {
 }
 
 .w25 {
-  width: 45%;
+  width: 25%;
 }
 
 .w15 {
@@ -212,6 +220,10 @@ body input:focus {
 }
 .childDivided:not(:last-child) {
   border-right: 1px solid #414141;
+}
+
+.childDivided:nth-child(2) {
+  padding-left: 0;
 }
 
 .btnSolid {
@@ -320,21 +332,19 @@ ul.list li.listItem::before {
   margin: 10px 0;
 }
 
-input.prodQuestionInput {
-  border: 1px solid #49D6CE;
-  background: #f2f2f2;
-  width: 100%;
-  height: 50px;
-  margin-bottom: 15px;
-  padding: 5px;
+/* Input Props */
+.customInput {
+  transition: 0.2s;
   font-size: 14px;
-  color: #414141;
+  height: 30px;
 }
-input.prodQuestionInput:hover {
-  border: 1px solid #49D6CE;
+.customInput:hover {
+  box-shadow: 0px 0px 10px 0px #49D6CE;
+  font-size: 18px;
 }
-input.prodQuestionInput:focus {
-  border: 1px solid #49D6CE;
+.customInput:focus {
+  box-shadow: 0px 0px 10px 0px #49D6CE;
+  font-size: 18px;
 }
 
 /*Text Props*/
@@ -457,6 +467,7 @@ header.header {
 }
 .headerCategories .btn:first-child {
   margin-left: 0;
+  padding-left: 0;
 }
 
 footer.footer {
@@ -472,6 +483,9 @@ footer.footer .footerMain .logo {
 }
 .gallery .card {
   width: 100%;
+}
+.gallery .card .cardImg img {
+  max-height: 700px;
 }
 .gallery .galleryThumbs {
   display: flex;
@@ -516,4 +530,33 @@ button.questionSend {
   height: 40px;
   width: 150px;
   margin-left: 0;
+}
+
+.categoryFilter .filterItem {
+  font-size: 14px;
+}
+
+.logInHolder {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.logInHolder .loginMain {
+  width: 40%;
+  height: auto;
+  padding: 15px;
+  text-align: center;
+}
+.logInHolder .loginMain .textHolder {
+  margin-top: 20px;
+}
+.logInHolder .loginMain .textHolder .customInput {
+  padding: 10px;
+}
+.logInHolder .loginMain .btnSolid {
+  height: 50px;
+  width: 50%;
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */

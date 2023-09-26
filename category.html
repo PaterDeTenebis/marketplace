@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto:wght@100;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="headerContent">
+          <div class="df">
+            <div class="logo">
+              <a href="#" class="text700 textDark">MarketPlace</a>
+            </div>
+            <button class="btn btnUnderline">All Categories</button>
+            <div class="hSearch"><input type="text" placeholder="Search" /></div>
+          </div>
+          <div class="df">
+            <div class="lang btnOutline">
+              <button class="btn childDivided">UA</button>
+              <button class="btn childDivided active">EN</button>
+            </div>
+            <button class="btn location">Location</button>
+            <button class="btn">Cart</button>
+            <div class="login btnUnderline">
+              <button class="btn childDivided">Log In</button>
+              <button class="btn childDivided">Sign Up</button>
+            </div>
+          </div>
+        </div>
+        <div class="headerCategories df">
+          <button class="btn">Men</button>
+          <button class="btn">Woman</button>
+          <button class="btn">Children</button>
+          <button class="btn">House</button>
+          <button class="btn">Health&Beauty</button>
+          <button class="btn">Sport</button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="categoryMain df">
+          <div class="categoryFilter w25">
+            <div class="sectionHeader lineDivided">
+              <span class="text500 textDark textMd">Filters :</span>
+            </div>
+            <div class="textHolder">
+              <div class="sectionHeader lineDivided">
+                <span class="text700 textDark textMd">Size</span>
+              </div>
+              <div class="col">
+                <div class="filterItem">
+                  <form>
+                    <input type="checkbox" />
+                    <label>XS</label>
+                  </form>
+                </div>
+                <div class="filterItem">
+                  <form>
+                    <input type="checkbox" />
+                    <label>S</label>
+                  </form>
+                </div>
+                <div class="filterItem">
+                  <form>
+                    <input type="checkbox" />
+                    <label>M</label>
+                  </form>
+                </div>
+                <div class="filterItem">
+                  <form>
+                    <input type="checkbox" />
+                    <label>L</label>
+                  </form>
+                </div>
+                <div class="filterItem">
+                  <form>
+                    <input type="checkbox" />
+                    <label>XL</label>
+                  </form>
+                </div>
+                <div class="filterItem">
+                  <form>
+                    <input type="checkbox" />
+                    <label>XXL</label>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="textHolder">
+              <div class="sectionHeader lineDivided">
+                <span class="text700 textDark textMd">State</span>
+              </div>
+              <div class="col">
+                <div class="filterItem">
+                  <form>
+                    <input type="checkbox" />
+                    <label>New</label>
+                  </form>
+                </div>
+                <div class="filterItem">
+                  <form>
+                    <input type="checkbox" />
+                    <label>Perfect</label>
+                  </form>
+                </div>
+                <div class="filterItem">
+                  <form>
+                    <input type="checkbox" />
+                    <label>Very good</label>
+                  </form>
+                </div>
+                <div class="filterItem">
+                  <form>
+                    <input type="checkbox" />
+                    <label>Good</label>
+                  </form>
+                </div>
+                <div class="filterItem">
+                  <form>
+                    <input type="checkbox" />
+                    <label>Satisfying</label>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="textHolder">
+              <div class="sectionHeader lineDivided">
+                <span class="text700 textDark textMd">Price</span>
+              </div>
+              <div class="col">
+                <div class="filterItem">
+                  <form>
+                    <input type="checkbox" />
+                    <label>to 100 <span class="currency">UAH</span></label>
+                  </form>
+                </div>
+                <div class="filterItem">
+                  <form>
+                    <input type="checkbox" />
+                    <label>from 100 to 300 <span class="currency">UAH</span></label>
+                  </form>
+                </div>
+                <div class="filterItem">
+                  <form>
+                    <input type="checkbox" />
+                    <label>from 300 to 500 <span class="currency">UAH</span></label>
+                  </form>
+                </div>
+                <div class="filterItem">
+                  <form>
+                    <input type="checkbox" />
+                    <label>from 500 to 1000 <span class="currency">UAH</span></label>
+                  </form>
+                </div>
+                <div class="filterItem">
+                  <form>
+                    <input type="checkbox" />
+                    <label>more than 1000 <span class="currency">UAH</span></label>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="categoryGoodsList w100">
+            <div class="sortBy dfBtw aiCenter lineDivided ">
+              <span class="text900 textDark textMd">Sort by:</span>
+              <button class="btn btnOutline">Popular</button>
+            </div>
+            <div class="df flw aiTop productsHolder">
+              <div class="card w15">
+                <div class="cardImg">
+                  <a href="productSingle.html">
+                    <img src="img/shirt.jpg" alt="" />
+                    <div class="cardLight topInfo dfCenter">
+                      <span class="ttu textXs text700 textDark">sale</span>
+                    </div>
+                    <div class="brandName">
+                      <span class="text700 textLight textFFSec textXl">Adidas</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="cardTxt">
+                  <div class="cardTxtItem">
+                    <span class="ttu text700 textDark textXl"> 500 uah </span>
+                  </div>
+                  <div class="cardTxtItem prodDescr">
+                    <a href="#"
+                      ><span class="text300 textDark textReg">
+                        Adidas Black T-Shirt Women Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Nam ab numquam nobis animi. Fugit voluptas perferendis
+                        temporibus provident, velit nemo?
+                      </span></a
+                    >
+                  </div>
+                  <div class="cardTxtItem">
+                    <span class="ttu text400 textDark textSm btnUnderline"> 34 / XS / 42 </span>
+                  </div>
+                </div>
+              </div>
+              <div class="card w15">
+                <div class="cardImg">
+                  <a href="#">
+                    <img src="img/shirt.jpg" alt="" />
+                    <div class="cardLight topInfo dfCenter">
+                      <span class="ttu textXs text700 textDark">sale</span>
+                    </div>
+                    <div class="brandName">
+                      <span class="text700 textLight textFFSec textXl">Adidas</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="cardTxt">
+                  <div class="cardTxtItem">
+                    <span class="ttu text700 textDark textXl"> 500 uah </span>
+                  </div>
+                  <div class="cardTxtItem prodDescr">
+                    <a href="#"
+                      ><span class="text300 textDark textReg">
+                        Adidas Black T-Shirt Women Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Nam ab numquam nobis animi. Fugit voluptas perferendis
+                        temporibus provident, velit nemo?
+                      </span></a
+                    >
+                  </div>
+                  <div class="cardTxtItem">
+                    <span class="ttu text400 textDark textSm btnUnderline"> 34 / XS / 42 </span>
+                  </div>
+                </div>
+              </div>
+              <div class="card w15">
+                <div class="cardImg">
+                  <a href="#">
+                    <img src="img/shirt.jpg" alt="" />
+                    <div class="cardLight topInfo dfCenter">
+                      <span class="ttu textXs text700 textDark">sale</span>
+                    </div>
+                    <div class="brandName">
+                      <span class="text700 textLight textFFSec textXl">Adidas</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="cardTxt">
+                  <div class="cardTxtItem">
+                    <span class="ttu text700 textDark textXl"> 500 uah </span>
+                  </div>
+                  <div class="cardTxtItem prodDescr">
+                    <a href="#"
+                      ><span class="text300 textDark textReg">
+                        Adidas Black T-Shirt Women Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Nam ab numquam nobis animi. Fugit voluptas perferendis
+                        temporibus provident, velit nemo?
+                      </span></a
+                    >
+                  </div>
+                  <div class="cardTxtItem">
+                    <span class="ttu text400 textDark textSm btnUnderline"> 34 / XS / 42 </span>
+                  </div>
+                </div>
+              </div>
+              <div class="card w15">
+                <div class="cardImg">
+                  <a href="#">
+                    <img src="img/shirt.jpg" alt="" />
+                    <div class="cardLight topInfo dfCenter">
+                      <span class="ttu textXs text700 textDark">sale</span>
+                    </div>
+                    <div class="brandName">
+                      <span class="text700 textLight textFFSec textXl">Adidas</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="cardTxt">
+                  <div class="cardTxtItem">
+                    <span class="ttu text700 textDark textXl"> 500 uah </span>
+                  </div>
+                  <div class="cardTxtItem prodDescr">
+                    <a href="#"
+                      ><span class="text300 textDark textReg">
+                        Adidas Black T-Shirt Women Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Nam ab numquam nobis animi. Fugit voluptas perferendis
+                        temporibus provident, velit nemo?
+                      </span></a
+                    >
+                  </div>
+                  <div class="cardTxtItem">
+                    <span class="ttu text400 textDark textSm btnUnderline"> 34 / XS / 42 </span>
+                  </div>
+                </div>
+              </div>
+              <div class="card w15">
+                <div class="cardImg">
+                  <a href="#">
+                    <img src="img/shirt.jpg" alt="" />
+                    <div class="cardLight topInfo dfCenter">
+                      <span class="ttu textXs text700 textDark">sale</span>
+                    </div>
+                    <div class="brandName">
+                      <span class="text700 textLight textFFSec textXl">Adidas</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="cardTxt">
+                  <div class="cardTxtItem">
+                    <span class="ttu text700 textDark textXl"> 500 uah </span>
+                  </div>
+                  <div class="cardTxtItem prodDescr">
+                    <a href="#"
+                      ><span class="text300 textDark textReg">
+                        Adidas Black T-Shirt Women Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Nam ab numquam nobis animi. Fugit voluptas perferendis
+                        temporibus provident, velit nemo?
+                      </span></a
+                    >
+                  </div>
+                  <div class="cardTxtItem">
+                    <span class="ttu text400 textDark textSm btnUnderline"> 34 / XS / 42 </span>
+                  </div>
+                </div>
+              </div>
+              <div class="card w15">
+                <div class="cardImg">
+                  <a href="#">
+                    <img src="img/shirt.jpg" alt="" />
+                    <div class="cardLight topInfo dfCenter">
+                      <span class="ttu textXs text700 textDark">sale</span>
+                    </div>
+                    <div class="brandName">
+                      <span class="text700 textLight textFFSec textXl">Adidas</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="cardTxt">
+                  <div class="cardTxtItem">
+                    <span class="ttu text700 textDark textXl"> 500 uah </span>
+                  </div>
+                  <div class="cardTxtItem prodDescr">
+                    <a href="#"
+                      ><span class="text300 textDark textReg">
+                        Adidas Black T-Shirt Women Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Nam ab numquam nobis animi. Fugit voluptas perferendis
+                        temporibus provident, velit nemo?
+                      </span></a
+                    >
+                  </div>
+                  <div class="cardTxtItem">
+                    <span class="ttu text400 textDark textSm btnUnderline"> 34 / XS / 42 </span>
+                  </div>
+                </div>
+              </div>
+              <div class="card w15">
+                <div class="cardImg">
+                  <a href="#">
+                    <img src="img/shirt.jpg" alt="" />
+                    <div class="cardLight topInfo dfCenter">
+                      <span class="ttu textXs text700 textDark">sale</span>
+                    </div>
+                    <div class="brandName">
+                      <span class="text700 textLight textFFSec textXl">Adidas</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="cardTxt">
+                  <div class="cardTxtItem">
+                    <span class="ttu text700 textDark textXl"> 500 uah </span>
+                  </div>
+                  <div class="cardTxtItem prodDescr">
+                    <a href="#"
+                      ><span class="text300 textDark textReg">
+                        Adidas Black T-Shirt Women Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Nam ab numquam nobis animi. Fugit voluptas perferendis
+                        temporibus provident, velit nemo?
+                      </span></a
+                    >
+                  </div>
+                  <div class="cardTxtItem">
+                    <span class="ttu text400 textDark textSm btnUnderline"> 34 / XS / 42 </span>
+                  </div>
+                </div>
+              </div>
+              <div class="card w15">
+                <div class="cardImg">
+                  <a href="#">
+                    <img src="img/shirt.jpg" alt="" />
+                    <div class="cardLight topInfo dfCenter">
+                      <span class="ttu textXs text700 textDark">sale</span>
+                    </div>
+                    <div class="brandName">
+                      <span class="text700 textLight textFFSec textXl">Adidas</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="cardTxt">
+                  <div class="cardTxtItem">
+                    <span class="ttu text700 textDark textXl"> 500 uah </span>
+                  </div>
+                  <div class="cardTxtItem prodDescr">
+                    <a href="#"
+                      ><span class="text300 textDark textReg">
+                        Adidas Black T-Shirt Women Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Nam ab numquam nobis animi. Fugit voluptas perferendis
+                        temporibus provident, velit nemo?
+                      </span></a
+                    >
+                  </div>
+                  <div class="cardTxtItem">
+                    <span class="ttu text400 textDark textSm btnUnderline"> 34 / XS / 42 </span>
+                  </div>
+                </div>
+              </div>
+              <div class="card w15">
+                <div class="cardImg">
+                  <a href="#">
+                    <img src="img/shirt.jpg" alt="" />
+                    <div class="cardLight topInfo dfCenter">
+                      <span class="ttu textXs text700 textDark">sale</span>
+                    </div>
+                    <div class="brandName">
+                      <span class="text700 textLight textFFSec textXl">Adidas</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="cardTxt">
+                  <div class="cardTxtItem">
+                    <span class="ttu text700 textDark textXl"> 500 uah </span>
+                  </div>
+                  <div class="cardTxtItem prodDescr">
+                    <a href="#"
+                      ><span class="text300 textDark textReg">
+                        Adidas Black T-Shirt Women Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Nam ab numquam nobis animi. Fugit voluptas perferendis
+                        temporibus provident, velit nemo?
+                      </span></a
+                    >
+                  </div>
+                  <div class="cardTxtItem">
+                    <span class="ttu text400 textDark textSm btnUnderline"> 34 / XS / 42 </span>
+                  </div>
+                </div>
+              </div>
+              <div class="card w15">
+                <div class="cardImg">
+                  <a href="#">
+                    <img src="img/shirt.jpg" alt="" />
+                    <div class="cardLight topInfo dfCenter">
+                      <span class="ttu textXs text700 textDark">sale</span>
+                    </div>
+                    <div class="brandName">
+                      <span class="text700 textLight textFFSec textXl">Adidas</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="cardTxt">
+                  <div class="cardTxtItem">
+                    <span class="ttu text700 textDark textXl"> 500 uah </span>
+                  </div>
+                  <div class="cardTxtItem prodDescr">
+                    <a href="#"
+                      ><span class="text300 textDark textReg">
+                        Adidas Black T-Shirt Women Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Nam ab numquam nobis animi. Fugit voluptas perferendis
+                        temporibus provident, velit nemo?
+                      </span></a
+                    >
+                  </div>
+                  <div class="cardTxtItem">
+                    <span class="ttu text400 textDark textSm btnUnderline"> 34 / XS / 42 </span>
+                  </div>
+                </div>
+              </div>
+              <div class="card w15">
+                <div class="cardImg">
+                  <a href="#">
+                    <img src="img/shirt.jpg" alt="" />
+                    <div class="cardLight topInfo dfCenter">
+                      <span class="ttu textXs text700 textDark">sale</span>
+                    </div>
+                    <div class="brandName">
+                      <span class="text700 textLight textFFSec textXl">Adidas</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="cardTxt">
+                  <div class="cardTxtItem">
+                    <span class="ttu text700 textDark textXl"> 500 uah </span>
+                  </div>
+                  <div class="cardTxtItem prodDescr">
+                    <a href="#"
+                      ><span class="text300 textDark textReg">
+                        Adidas Black T-Shirt Women Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Nam ab numquam nobis animi. Fugit voluptas perferendis
+                        temporibus provident, velit nemo?
+                      </span></a
+                    >
+                  </div>
+                  <div class="cardTxtItem">
+                    <span class="ttu text400 textDark textSm btnUnderline"> 34 / XS / 42 </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footerMain df aiTop">
+            <div class="logo">
+              <a href="#" class="text700 textDark">MarketPlace</a>
+            </div>
+            <div class="itemBlank">
+              <div class="">
+                <span class="textDark text500 textDark"> Contacts: </span>
+              </div>
+              <div class="lineDivided">
+                <span class="textDark text400 textDark"> Lorem Ipsum st. 4308 </span>
+              </div>
+              <div class="lineDivided">
+                <span class="textDark text400 textDark"> +01488 420 4308 </span>
+              </div>
+            </div>
+            <div class="itemBlank mla">
+              <div class="df">
+                <button class="btn">FAQ</button>
+                <button class="btn">Privacy policy</button>
+                <button class="btn">About Company</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
