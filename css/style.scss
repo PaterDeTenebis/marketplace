@@ -234,3 +234,25 @@ button.questionSend {
 .order {
   padding: 10px;
 }
+.delWay {
+  padding: 10px;
+}
+.payWayItem {
+  background: $defSec;
+  border-radius: $defBrad;
+  .payMethodIcon {
+    margin: 0 10px;
+  }
+}
+.orderTotal {
+  background: $defSec;
+  padding: 15px;
+  height: fit-content;
+  border-radius: $defBrad;
+  .btnSolid {
+    padding: 15px;
+  }
+  .dividerH {
+    background: #cdcdcd;
+  }
+}

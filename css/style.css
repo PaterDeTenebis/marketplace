@@ -223,7 +223,7 @@ body input:focus {
 
 .btnOutlineDark {
   border: 1px solid #414141;
-  border-radius: #414141;
+  border-radius: 9px;
   padding: 5px;
 }
 .btnOutlineDark:hover {
@@ -259,6 +259,7 @@ body input:focus {
 
 .btnSolid {
   background: #49D6CE;
+  border-radius: 9px;
 }
 .btnSolid:hover {
   color: #fafafa;
@@ -383,6 +384,11 @@ ul.list li.listItem::before {
 .customInput:focus {
   box-shadow: 0px 0px 10px 0px #49D6CE;
   font-size: 18px;
+}
+
+.dataForm .customInput {
+  border: 1px solid #49D6CE;
+  padding: 5px;
 }
 
 /* Blank wrapper Props */
@@ -652,4 +658,30 @@ button.questionSend {
 
 .order {
   padding: 10px;
+}
+
+.delWay {
+  padding: 10px;
+}
+
+.payWayItem {
+  background: #f2f2f2;
+  border-radius: 9px;
+}
+.payWayItem .payMethodIcon {
+  margin: 0 10px;
+}
+
+.orderTotal {
+  background: #f2f2f2;
+  padding: 15px;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 9px;
+}
+.orderTotal .btnSolid {
+  padding: 15px;
+}
+.orderTotal .dividerH {
+  background: #cdcdcd;
 }/*# sourceMappingURL=style.css.map */

@@ -120,7 +120,7 @@
 }
 .btnOutlineDark {
   border: 1px solid $defDark;
-  border-radius: $defDark;
+  border-radius: $defBrad;
   padding: 5px;
   &:hover {
     border: 1px solid $defContr;
@@ -152,6 +152,7 @@
 }
 .btnSolid {
   background: $defContr;
+  border-radius: $defBrad;
   &:hover {
     color: $defLight;
     opacity: 0.8;
@@ -280,6 +281,12 @@ ul.list {
     font-size: 18px;
   }
 }
+.dataForm {
+  .customInput {
+    border: 1px solid $defContr;
+    padding: 5px;
+  }
+}
 
 /* Blank wrapper Props */
 
@@ -299,7 +306,6 @@ ul.list {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.4);
-  
   .modalBody {
     width: 50%;
     max-height: 60%;
@@ -314,7 +320,6 @@ ul.list {
     &::-webkit-scrollbar {
       display: none;
     }
-    
     .modalHeader {
       margin-bottom: 10px;
     }
