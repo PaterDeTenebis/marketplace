@@ -216,3 +216,21 @@ button.questionSend {
     }
   }
 }
+
+.cartProduct {
+  .cartProductImg {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+    img {
+      width: 100%;
+      border-radius: $defBrad;
+    }
+  }
+  .cartCalculation {
+    margin-right: 10px;
+  }
+}
+.order {
+  padding: 10px;
+}

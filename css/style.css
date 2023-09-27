@@ -117,6 +117,10 @@ body input:focus {
   align-items: center;
 }
 
+.aiEnd {
+  align-items: flex-end;
+}
+
 .dfCenter {
   display: flex;
   justify-content: center;
@@ -124,8 +128,35 @@ body input:focus {
   text-align: center;
 }
 
+.jcCenter {
+  justify-content: center;
+}
+
+.jcEnd {
+  justify-content: end;
+}
+
+.centered {
+  align-items: center;
+  justify-content: center;
+}
+
 .flw {
   flex-wrap: wrap;
+}
+
+/* Text align Props */
+.tal {
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+
+.tac {
+  text-align: center;
+}
+
+.tar {
+  text-align: right;
 }
 
 /* Width Props */
@@ -243,6 +274,13 @@ section.section {
   margin: 15px 0;
 }
 
+.dividerH {
+  height: 1px;
+  width: 100%;
+  border-radius: 9px;
+  background: #f2f2f2;
+}
+
 /* Card Props */
 .card {
   border-radius: 9px;
@@ -347,6 +385,44 @@ ul.list li.listItem::before {
   font-size: 18px;
 }
 
+/* Blank wrapper Props */
+.itemBlank {
+  padding: 0;
+  margin: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+/* Modal Props */
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+}
+.modal .modalBody {
+  width: 50%;
+  max-height: 60%;
+  background: #fff;
+  border-radius: 9px;
+  padding: 15px;
+  position: relative;
+  z-index: 1;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.modal .modalBody::-webkit-scrollbar {
+  display: none;
+}
+.modal .modalBody .modalHeader {
+  margin-bottom: 10px;
+}
+
 /*Text Props*/
 /*Text Font Family Props*/
 .textFFMain {
@@ -405,7 +481,7 @@ ul.list li.listItem::before {
 
 /*Text Size Props*/
 .textXs {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .textSm {
@@ -559,4 +635,21 @@ button.questionSend {
   height: 50px;
   width: 50%;
   margin-top: 20px;
+}
+
+.cartProduct .cartProductImg {
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
+}
+.cartProduct .cartProductImg img {
+  width: 100%;
+  border-radius: 9px;
+}
+.cartProduct .cartCalculation {
+  margin-right: 10px;
+}
+
+.order {
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
