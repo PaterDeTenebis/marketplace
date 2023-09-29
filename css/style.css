@@ -626,9 +626,10 @@ button.questionSend {
   justify-content: center;
 }
 .logInHolder .loginMain {
-  width: 40%;
+  width: 20%;
   height: auto;
   padding: 15px;
+  margin-top: -150px;
   text-align: center;
 }
 .logInHolder .loginMain .textHolder {
